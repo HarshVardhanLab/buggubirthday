@@ -17,7 +17,7 @@ export const birthdayConfig = {
     { src: '/images/her/photo6.jpg', width: 1080, height: 1920, caption: 'Forever my favourite girl in Black Saree' },
   ],
   memories: [
-    { title: 'Our first conversation', note: 'A little beginning that became something special.' },
+    { title: 'Our first conversation', note: 'A little beginning that Vo lota or maira sar..' },
     { title: 'Our first special memory', note: 'Vo bus ki memory jo hmne sath mai hath pkda' },
     { title: 'The moment that made me smile', note: 'Jab mai aapko samne dekhta hu' },
     { title: 'My favourite thing about you', note: 'Our Understandings and your matuarity when thats needed and your playful when needed.' },

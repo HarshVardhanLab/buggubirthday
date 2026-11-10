@@ -24,6 +24,7 @@ export default function Home() {
   const [volume, setVolume] = useState(0.55);
   const audioRef = useRef<HTMLAudioElement>(null);
   const touchStart = useRef<number | null>(null);
+  const touchStartY = useRef<number | null>(null);
   const sections = useRef<Array<HTMLElement | null>>([]);
 
   const goTo = useCallback((index: number) => {
@@ -39,7 +40,27 @@ export default function Home() {
       });
     }, { threshold: 0.55 });
     sections.current.forEach((section) => section && observer.observe(section));
-    return () => observer.disconnect();
+    
+    // Prevent pull-to-refresh on mobile
+    let touchStartY = 0;
+    const preventPull = (e: TouchEvent) => {
+      const target = e.target as HTMLElement;
+      if (target.closest('.polaroid-grid') || target.closest('.lightbox')) return;
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      if (e.type === 'touchstart') {
+        touchStartY = e.touches[0].clientY;
+      } else if (e.type === 'touchmove' && scrollTop === 0 && e.touches[0].clientY > touchStartY) {
+        e.preventDefault();
+      }
+    };
+    document.addEventListener('touchstart', preventPull, { passive: false });
+    document.addEventListener('touchmove', preventPull, { passive: false });
+    
+    return () => {
+      observer.disconnect();
+      document.removeEventListener('touchstart', preventPull);
+      document.removeEventListener('touchmove', preventPull);
+    };
   }, []);
 
   useEffect(() => {
@@ -74,6 +95,7 @@ export default function Home() {
     void confetti({ particleCount: 105, spread: 82, startVelocity: 36, origin: { y: 0.65 }, colors: ['#e50935', '#ff4969', '#fff1f3', '#a30025'] });
     window.setTimeout(() => void confetti({ particleCount: 45, spread: 110, startVelocity: 23, origin: { y: 0.55, x: 0.2 }, colors: ['#e50935', '#ff4969', '#fff1f3'] }), 180);
     setCandlesOut(true);
+    if (navigator.vibrate) navigator.vibrate([50, 30, 50]);
   };
 
   return <main>
