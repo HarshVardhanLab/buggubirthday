@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: "Priya's Little Universe ❤️",
-  description: 'A little world, created just for you. A birthday surprise from Harsh to Priya.',
+  description: 'A little world, created just for you. A birthday surprise from Your Hubby to Priya.',
 };
 export const viewport: Viewport = { width: 'device-width', initialScale: 1, viewportFit: 'cover', themeColor: '#080608' };
 

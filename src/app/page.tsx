@@ -126,7 +126,7 @@ export default function Home() {
     <section className="scene letter-scene" data-index="1" ref={(el) => { sections.current[1] = el; }}>
       <div className="section-heading"><span className="eyebrow">SOME THINGS ARE BETTER SAID BY HAND</span><h2>A letter <em>for you.</em></h2><p>Ek chhoti si baat, dil se.</p></div>
       <div className={`envelope-wrap ${opened ? 'is-open' : ''}`}>
-        <div className="envelope-shadow"/><div className="letter-paper"><div className="letter-topline">A NOTE FOR MY FAVOURITE PERSON <Heart size={13} fill="currentColor"/></div><p className="letter-body">{opened ? config.letter.slice(0, letterChars) : ''}</p>{opened && <div className="letter-sign">With all my love,<br/><span>Harsh</span> <Heart size={13} fill="currentColor"/></div>}</div>
+        <div className="envelope-shadow"/><div className="letter-paper"><div className="letter-topline">A NOTE FOR MY FAVOURITE PERSON <Heart size={13} fill="currentColor"/></div><p className="letter-body">{opened ? config.letter.slice(0, letterChars) : ''}</p>{opened && <div className="letter-sign">With all my love,<br/><span>Your Hubby</span> <Heart size={13} fill="currentColor"/></div>}</div>
         <button className="envelope" onClick={() => { setLetterChars(0); setOpened(true); }} aria-label="Open the love letter" disabled={opened}>
           <div className="env-back"/><div className="env-flap"/><div className="env-front"/><span className="wax-seal"><Heart size={22} fill="currentColor"/></span>
           {!opened && <span className="tap-envelope">Tap to open</span>}
@@ -165,7 +165,7 @@ export default function Home() {
     <section className="scene finale-scene" data-index="5" ref={(el) => { sections.current[5] = el; }}>
       <div className="final-heart" aria-hidden="true"><Heart fill="currentColor" strokeWidth={0}/></div>
       <motion.div className="finale-content" initial={{ opacity: 0, y: 25 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .3 }} transition={{ duration: 1 }}>
-        <span className="eyebrow">TODAY, TOMORROW, ALWAYS</span><h2>Happy Birthday,<br/><em>Priya!</em> <span className="final-red-heart">♥</span></h2><p className="final-tagline">My Buggu, my favourite person.</p><div className="final-divider"><i/> <Heart size={12} fill="currentColor"/> <i/></div><p className="final-message">{config.finale}</p><div className="signature"><span>With love,</span><strong>Harsh <Heart size={13} fill="currentColor"/></strong></div>
+        <span className="eyebrow">TODAY, TOMORROW, ALWAYS</span><h2>Happy Birthday,<br/><em>Priya!</em> <span className="final-red-heart">♥</span></h2><p className="final-tagline">My Buggu, my favourite person.</p><div className="final-divider"><i/> <Heart size={12} fill="currentColor"/> <i/></div><p className="final-message">{config.finale}</p><div className="signature"><span>With love,</span><strong>Your Hubby <Heart size={13} fill="currentColor"/></strong></div>
         <button className="replay-button" onClick={() => { setOpened(false); setLetterChars(0); setCandlesOut(false); goTo(0); }}><Heart size={13}/> Start our little universe again</button>
       </motion.div>
       <div className="scene-number">06 <i/> 06</div>

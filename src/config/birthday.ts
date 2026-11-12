@@ -1,5 +1,5 @@
 export const birthdayConfig = {
-  creator: 'Harsh',
+  creator: 'Your Hubby',
   recipient: 'Priya',
   nickname: 'Buggu',
   birthday: '2004-11-11',
@@ -7,7 +7,7 @@ export const birthdayConfig = {
   title: "Priya's Little Universe",
   subtitle: 'A little world, created just for you.',
   language: 'Hinglish',
-  letter: `Dear Buggu,\n\nPriya...\n\nPata nahi kaise express karun ki tum mere liye kitni special ho. Kabhi kabhi words kam pad jaate hain, aur feelings explain karna mushkil ho jaata hai.\n\nBas itna jaanta hoon ki tumhari smile mere din ko better bana sakti hai. Tumhari chhoti-chhoti baatein, tumhara cute sa nature aur tumhari presence mere liye bahut matter karti hai.\n\nAaj tumhara birthday hai, aur main chahta hoon ki tumhari life mein hamesha happiness ho, tumhare saare dreams complete hon aur tum hamesha aise hi smile karti raho.\n\nAur haan Buggu, kabhi khud ko less mat samajhna. You are precious, exactly the way you are.\n\nHappy Birthday, meri Buggu! ❤️\n\n— Tumhara Harsh ❤️`,
+  letter: `Dear Buggu,\n\nPriya...\n\nPata nahi kaise express karun ki tum mere liye kitni special ho. Kabhi kabhi words kam pad jaate hain, aur feelings explain karna mushkil ho jaata hai.\n\nBas itna jaanta hoon ki tumhari smile mere din ko better bana sakti hai. Tumhari chhoti-chhoti baatein, tumhara cute sa nature aur tumhari presence mere liye bahut matter karti hai.\n\nAaj tumhara birthday hai, aur main chahta hoon ki tumhari life mein hamesha happiness ho, tumhare saare dreams complete hon aur tum hamesha aise hi smile karti raho.\n\nAur haan Buggu, kabhi khud ko less mat samajhna. You are precious, exactly the way you are.\n\nHappy Birthday, meri Buggu! ❤️\n\n— Tumhara Your Hubby ❤️`,
   photos: [
     { src: '/images/her/photo1.jpg', width: 720, height: 1280, caption: 'That Gorgeous girl is mine ❤️' },
     { src: '/images/her/photo2.jpg', width: 1080, height: 1920, caption: 'My favourite pic of 10-11-2026.' },
