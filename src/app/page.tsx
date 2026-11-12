@@ -123,10 +123,10 @@ export default function Home() {
       <div className="scene-number">01 <i/> 06</div>
     </section>
 
-    <section className="scene letter-scene" data-index="1" ref={(el) => { sections.current[1] = el; }}>
+    <section className={`scene letter-scene ${opened ? 'letter-opened' : ''}`} data-index="1" ref={(el) => { sections.current[1] = el; }}>
       <div className="section-heading"><span className="eyebrow">SOME THINGS ARE BETTER SAID BY HAND</span><h2>A letter <em>for you.</em></h2><p>Ek chhoti si baat, dil se.</p></div>
       <div className={`envelope-wrap ${opened ? 'is-open' : ''}`}>
-        <div className="envelope-shadow"/><div className="letter-paper"><div className="letter-topline">A NOTE FOR MY FAVOURITE PERSON <Heart size={13} fill="currentColor"/></div><p className="letter-body">{opened ? config.letter.slice(0, letterChars) : ''}</p>{opened && <div className="letter-sign">With all my love,<br/><span>Your Hubby</span> <Heart size={13} fill="currentColor"/></div>}</div>
+        <div className="envelope-shadow"/><div className="letter-paper"><div className="letter-topline"><span>A NOTE FOR MY FAVOURITE PERSON</span><div className="letter-actions"><Heart size={13} fill="currentColor"/>{opened && <button className="letter-close" onClick={() => { setOpened(false); setLetterChars(0); }} aria-label="Close the love letter" title="Close letter"><X size={14}/></button>}</div></div><p className="letter-body">{opened ? config.letter.slice(0, letterChars) : ''}</p>{opened && letterChars >= config.letter.length && <div className="letter-sign">With all my love,<br/><span>Your Hubby</span> <Heart size={13} fill="currentColor"/></div>}</div>
         <button className="envelope" onClick={() => { setLetterChars(0); setOpened(true); }} aria-label="Open the love letter" disabled={opened}>
           <div className="env-back"/><div className="env-flap"/><div className="env-front"/><span className="wax-seal"><Heart size={22} fill="currentColor"/></span>
           {!opened && <span className="tap-envelope">Tap to open</span>}

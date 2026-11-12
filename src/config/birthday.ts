@@ -7,14 +7,14 @@ export const birthdayConfig = {
   title: "Priya's Little Universe",
   subtitle: 'A little world, created just for you.',
   language: 'Hinglish',
-  letter: `Dear Buggu,\n\nPriya...\n\nPata nahi kaise express karun ki tum mere liye kitni special ho. Kabhi kabhi words kam pad jaate hain, aur feelings explain karna mushkil ho jaata hai.\n\nBas itna jaanta hoon ki tumhari smile mere din ko better bana sakti hai. Tumhari chhoti-chhoti baatein, tumhara cute sa nature aur tumhari presence mere liye bahut matter karti hai.\n\nAaj tumhara birthday hai, aur main chahta hoon ki tumhari life mein hamesha happiness ho, tumhare saare dreams complete hon aur tum hamesha aise hi smile karti raho.\n\nAur haan Buggu, kabhi khud ko less mat samajhna. You are precious, exactly the way you are.\n\nHappy Birthday, meri Buggu! ❤️\n\n— Tumhara Your Hubby ❤️`,
+  letter: `Dear Buggu,\n\nPriya...\n\nPata nahi kaise express karun ki tum mere liye kitni special ho. Kabhi kabhi words kam pad jaate hain, aur feelings explain karna mushkil ho jaata hai.\n\nBas itna jaanta hoon ki tumhari smile mere din ko better bana sakti hai. Tumhari chhoti-chhoti baatein, tumhara cute sa nature aur tumhari presence mere liye bahut matter karti hai.\n\nAaj tumhara birthday hai, aur main chahta hoon ki tumhari life mein hamesha happiness ho, tumhare saare dreams complete hon aur tum hamesha aise hi smile karti raho.\n\nAur haan Buggu, kabhi khud ko less mat samajhna. You are precious, exactly the way you are.\n\nHappy Birthday, meri Buggu! ❤️\n\n—Tumhara Hubby ❤️`,
   photos: [
     { src: '/images/her/photo1.jpg', width: 720, height: 1280, caption: 'That Gorgeous girl is mine ❤️' },
     { src: '/images/her/photo2.jpg', width: 1080, height: 1920, caption: 'My favourite pic of 10-11-2026.' },
     { src: '/images/her/photo3.jpg', width: 1080, height: 1920, caption: 'Bas tum aur tumhari Smile ka ye side place.' },
     { src: '/images/her/photo4.jpg', width: 960, height: 1280, caption: 'A little happiness called Priya.' },
     { src: '/images/her/photo5.jpg', width: 1080, height: 1920, caption: 'Some pictures has Simplicity but has infinite attraction.' },
-    { src: '/images/her/photo6.jpg', width: 1080, height: 1920, caption: 'Forever my favourite girl in Black Saree' },
+    { src: '/images/her/photo6.jpeg', width: 1080, height: 1920, caption: 'Forever my favourite girl in Black Saree' },
   ],
   memories: [
     { title: 'Our first conversation', note: 'A little beginning that Vo lota or maira sar..' },
