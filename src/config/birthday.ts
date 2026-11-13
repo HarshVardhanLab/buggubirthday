@@ -14,7 +14,7 @@ export const birthdayConfig = {
     { src: '/images/her/photo3.jpg', width: 1080, height: 1920, caption: 'Bas tum aur tumhari Smile ka ye side place.' },
     { src: '/images/her/photo4.jpg', width: 960, height: 1280, caption: 'A little happiness called Priya.' },
     { src: '/images/her/photo5.jpg', width: 1080, height: 1920, caption: 'Some pictures has Simplicity but has infinite attraction.' },
-    { src: '/images/her/photo6.jpeg', width: 1080, height: 1920, caption: 'Forever my favourite girl in Black Saree' },
+    { src: '/images/her/photo6.jpeg', width: 1080, height: 1920, caption: 'Forever my favourite girl in Black' },
   ],
   memories: [
     { title: 'Our first conversation', note: 'A little beginning that Vo lota or maira sar..' },
